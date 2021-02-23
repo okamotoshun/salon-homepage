@@ -1,0 +1,807 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.67;
+}
+
+body {
+  font-family: Roboto Mono for Powerline,Roboto;
+  font-size: 16px;
+}
+
+.inner {
+  padding: 260px 0 70px;
+  width: 84%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 720px) {
+  .inner {
+    width: 100%;
+    padding: 60px 20px 0;
+    margin: 0;
+  }
+}
+
+.title {
+  color: #707070;
+  line-height: 2.4rem;
+  font-size: 1.8rem;
+  letter-spacing: 5.4px;
+  font-family: Roboto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+@media screen and (max-width: 720px) {
+  .title {
+    margin-bottom: 50px;
+  }
+}
+
+.title:after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid;
+  width: 99px;
+  margin-left: 2.25rem;
+  color: #707070;
+}
+
+@media screen and (max-width: 720px) {
+  .title:after {
+    width: 44px;
+  }
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 68px 0 0 78px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 960px) {
+  header {
+    position: absolute;
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    padding: 24px 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.salon {
+  font-size: 3.8rem;
+}
+
+@media screen and (max-width: 720px) {
+  .salon {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  nav {
+    display: none;
+  }
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  font-size: 1.8rem;
+  color: #707070;
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  color: black;
+  position: relative;
+}
+
+nav ul li:first-child:after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: 0.5;
+}
+
+.ham {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .ham {
+    width: 16px;
+    height: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #3B4043;
+  }
+  .ham .short {
+    width: 60%;
+    background-color: #3B4043;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .first-v {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.first-v_left {
+  width: 46%;
+  height: 100vh;
+  position: relative;
+}
+
+@media screen and (max-width: 959px) {
+  .first-v_left {
+    width: 100%;
+    height: 89vh;
+    position: absolute;
+    z-index: 10;
+    color: white;
+  }
+}
+
+.first-v_right {
+  background-image: url(../img/hair1.png);
+  background-size: cover;
+  width: 54%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 959px) {
+  .first-v_right {
+    position: absolute;
+    position: relative;
+    width: 100%;
+    height: 89vh;
+  }
+}
+
+.hair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+@media screen and (max-width: 959px) {
+  .hair {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.hair-font {
+  padding-left: 10%;
+  font-family: ヒラギノ明朝 Pro;
+  font-size: 3.8rem;
+}
+
+@media screen and (max-width: 720px) {
+  .hair-font {
+    font-size: 2.3rem;
+  }
+}
+
+.hair-font_e {
+  font-family: Zapfino,cursive;
+  font-size: 3.8rem;
+}
+
+@media screen and (max-width: 720px) {
+  .hair-font_e {
+    font-size: 2.8rem;
+  }
+}
+
+.concept {
+  background: -webkit-gradient(linear, left top, left bottom, from(#A193861F), color-stop(42%, #A193861F), color-stop(42%, #A1938689), to(#A1938689));
+  background: linear-gradient(to bottom, #A193861F 0%, #A193861F 42%, #A1938689 42%, #A1938689 100%);
+}
+
+@media screen and (max-width: 720px) {
+  .concept {
+    height: 660px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#A193861F), color-stop(24%, #A193861F), color-stop(24%, #A1938689), to(#A1938689));
+    background: linear-gradient(to bottom, #A193861F 0%, #A193861F 24%, #A1938689 24%, #A1938689 100%);
+  }
+}
+
+.img {
+  width: 100%;
+  height: 51.4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 720px) {
+  .img {
+    height: 30vh;
+  }
+}
+
+.img-a {
+  background-image: url(../img/hair2.png);
+  background-size: cover;
+  background-position: right 0%;
+  width: 62.5%;
+}
+
+@media screen and (max-width: 720px) {
+  .img-a {
+    width: 49%;
+  }
+}
+
+.img-b {
+  background-image: url(../img/hair3.png);
+  background-size: cover;
+  width: 36.5%;
+}
+
+@media screen and (max-width: 959px) {
+  .img-b {
+    width: 49%;
+    background-position: right;
+  }
+}
+
+.concept-font {
+  color: white;
+  width: 87%;
+  margin: 70px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-font {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 50px auto 0;
+  }
+}
+
+.concept-font_a {
+  margin-top: 20px;
+  width: 50%;
+  font-size: 4rem;
+  font-family: ヒラギノ明朝 Pro;
+  letter-spacing: 16px;
+}
+
+@media screen and (min-width: 960px) {
+  .concept-font_a {
+    min-width: 450px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .concept-font_a {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: 7.2px;
+    margin: 0;
+  }
+}
+
+.concept-font_b {
+  width: 46%;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  font-family: ヒラギノ角ゴ Pro;
+  letter-spacing: 1.6px;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-font_b {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.menu-img {
+  width: 100%;
+}
+
+.menu-img img {
+  width: 100%;
+}
+
+.menu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 720px) {
+  .menu-wrap {
+    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.menu-item {
+  width: 26%;
+}
+
+@media screen and (max-width: 720px) {
+  .menu-item {
+    width: 100%;
+    margin-bottom: 63px;
+  }
+}
+
+.menu-item:nth-child(2) img {
+  border: 1px solid #707070;
+}
+
+.menu-content {
+  text-align: center;
+  line-height: 1.9rem;
+}
+
+@media screen and (max-width: 720px) {
+  .menu-content {
+    padding: 0px;
+    padding-left: 13px;
+  }
+}
+
+.menu-content_title {
+  font-size: 3rem;
+  padding-top: 37px;
+  padding-bottom: 34px;
+  line-height: 3.6rem;
+  min-width: 185px;
+}
+
+@media screen and (max-width: 720px) {
+  .menu-content_title {
+    padding-top: 30px;
+    padding-bottom: 34 0px;
+    text-align: left;
+  }
+}
+
+.menu-content_text {
+  font-size: 1.6rem;
+  padding: 0 6px 34px 15px;
+  letter-spacing: 1.6px;
+  text-align: left;
+}
+
+@media screen and (max-width: 959px) {
+  .menu-content_text {
+    padding: 0 0 26px;
+  }
+}
+
+.menu-content_price {
+  letter-spacing: 1.6px;
+  font-size: 1.6rem;
+  text-align: right;
+}
+
+.access {
+  padding: 260px 0 70px;
+  background-color: #A193861F;
+}
+
+@media screen and (max-width: 720px) {
+  .access {
+    padding: 60px 0 50px;
+  }
+}
+
+.access .title {
+  padding-left: 100px;
+}
+
+@media screen and (max-width: 720px) {
+  .access .title {
+    padding-left: 20px;
+  }
+}
+
+.access-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #D0C5BA;
+}
+
+@media screen and (max-width: 720px) {
+  .access-wrap {
+    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.access-wrap .access-content {
+  width: 40%;
+  margin: auto 0;
+}
+
+@media screen and (max-width: 720px) {
+  .access-wrap .access-content {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+.access-wrap .access-content_h {
+  padding-left: 20%;
+  color: #00000038;
+  margin: 0 0 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 2.4px;
+}
+
+@media screen and (max-width: 720px) {
+  .access-wrap .access-content_h {
+    padding-left: 0%;
+    padding-left: 20px;
+    margin: 30px 0;
+  }
+}
+
+.access-wrap .access-content_p {
+  color: #FFFFFF;
+  padding-left: 20%;
+  margin-bottom: 2.4rem;
+  font-size: 1.6rem;
+  letter-spacing: 1.6px;
+  font-family: Roboto Mono for Powerline;
+}
+
+@media screen and (max-width: 720px) {
+  .access-wrap .access-content_p {
+    padding-left: 0%;
+    padding-left: 20px;
+  }
+  .access-wrap .access-content_p:last-child {
+    margin: 0;
+  }
+}
+
+.access-wrap .map {
+  width: 60%;
+}
+
+@media screen and (max-width: 720px) {
+  .access-wrap .map {
+    width: 100%;
+  }
+}
+
+/* グーグルマップ・レスポンシブレイアウト */
+.gmap-wrap {
+  position: relative;
+  height: 0;
+  padding-bottom: 49%;
+  /* 縦横比の指定 */
+  overflow: hidden;
+}
+
+@media screen and (max-width: 959px) {
+  .gmap-wrap {
+    padding-bottom: 80%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .gmap-wrap {
+    padding-bottom: 62%;
+  }
+}
+
+.gmap-wrap iframe,
+.gmap-wrap object,
+.gmap-wrap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  padding: 164px 8% 62px;
+}
+
+@media screen and (max-width: 720px) {
+  footer {
+    padding: 63px 8% 20px;
+  }
+}
+
+.footer-line {
+  border-top: 1px solid #70707036;
+  margin-bottom: 83.5px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 3.2rem;
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-left_font {
+  font-size: 3.2rem;
+  color: #7070704D;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+}
+
+@media screen and (max-width: 720px) {
+  .footer-left_font {
+    font-size: 1.8rem;
+    letter-spacing: 1.8px;
+  }
+}
+
+.footer-icon {
+  font-size: 2rem;
+}
+
+.footer-icon i.fa-twitter {
+  margin-left: 26px;
+  margin-right: 9px;
+}
+
+@media screen and (max-width: 720px) {
+  .footer-right {
+    margin: 0 auto 62px;
+  }
+}
+
+.footer-right_font {
+  padding: 9px 41px 8px;
+  color: #707070;
+  font-size: 1.8rem;
+  line-height: 0.8em;
+  font-family: Roboto Mono for Powerline;
+  letter-spacing: 1.8px;
+  border: 1px solid #707070;
+}
+
+@media screen and (max-width: 720px) {
+  .footer-right_font {
+    text-align: center;
+  }
+}

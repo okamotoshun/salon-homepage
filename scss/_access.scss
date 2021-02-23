@@ -1,0 +1,91 @@
+.access {
+  padding: 260px 0 70px;
+  background-color: #A193861F;
+  @include sp {
+    padding: 60px 0 50px;
+  }
+  .title {
+    padding-left: 100px;
+    @include sp {
+        padding-left: 20px;
+      }
+  }
+}
+
+
+.access-wrap {
+  display: flex;
+  background-color: #D0C5BA;
+  @include sp {
+    display: none;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .access-content {
+    width: 40%;
+    margin: auto 0;
+    @include sp {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+    &_h {
+      padding-left: 20%;
+      color: #00000038;
+      margin: 0 0 30px;
+      font-size: 2.4rem;
+      font-weight: bold;
+      letter-spacing: 2.4px;
+      @include sp {
+        padding-left: 0%;
+        padding-left: 20px;
+        margin: 30px 0 ;
+      }
+    }
+    &_p {
+      color: #FFFFFF;
+      padding-left: 20%;
+      margin-bottom: 2.4rem;
+      font-size: 1.6rem;
+      letter-spacing: 1.6px;
+      font-family: Roboto Mono for Powerline;
+      @include sp {
+        padding-left: 0%;
+        padding-left: 20px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .map {
+    width: 60%;
+    @include sp {
+      width: 100%;
+    }
+  }
+}
+
+
+/* グーグルマップ・レスポンシブレイアウト */
+.gmap-wrap{
+    position : relative;
+    height : 0;
+    padding-bottom : 49%; /* 縦横比の指定 */
+    overflow : hidden;
+    @include tab {
+      padding-bottom: 80%;
+    }
+    @include sp {
+      padding-bottom: 62%;
+    }
+}
+
+.gmap-wrap iframe,
+.gmap-wrap object,
+.gmap-wrap embed{
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+}

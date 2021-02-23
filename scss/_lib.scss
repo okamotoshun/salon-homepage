@@ -1,0 +1,66 @@
+// mixin
+@mixin pc {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+@mixin tab {
+  @media screen and (max-width: 959px) {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: 720px) {
+    @content;
+  }
+}
+
+// 共通
+
+html {
+  font-size: 62.5%;
+  line-height: 1.67;
+}
+
+body {
+  font-family: Roboto Mono for Powerline,Roboto;
+  font-size: 16px;
+}
+
+
+.inner {
+  padding: 260px 0 70px ;
+  width: 84%;
+  margin: 0 auto;
+  @include sp {
+    width: 100%;
+    padding: 60px 20px 0;
+    margin: 0;
+  }
+}
+
+
+.title {
+  color: #707070;
+  line-height: 2.4rem;
+  font-size: 1.8rem;
+  letter-spacing: 5.4px;
+  font-family: Roboto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+    @include sp {
+      margin-bottom: 50px;
+    }
+  &:after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid ;
+    width: 99px;
+    margin-left: 2.25rem;
+    color: #707070;
+    @include sp {
+      width: 44px;
+    }
+  }
+}

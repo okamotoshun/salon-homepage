@@ -1,0 +1,60 @@
+footer {
+  padding: 164px 8% 62px;
+  @include sp {
+    padding: 63px 8% 20px;
+  }
+}
+
+.footer-line {
+  border-top: 1px solid #70707036;
+  margin-bottom: 83.5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  line-height: 3.2rem;
+  @include sp {
+    display: none;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  &-left {
+    display: flex;
+    justify-content: space-between;
+    &_font {
+      font-size: 3.2rem;
+      color: #7070704D;
+      text-transform: uppercase;
+      letter-spacing: 3.2px;
+      @include sp {
+        font-size: 1.8rem;
+        letter-spacing: 1.8px;
+      }
+    }
+  }
+  &-icon {
+    font-size: 2rem;
+    i.fa-twitter {
+      margin-left : 26px;
+      margin-right: 9px;
+    }
+  }
+  &-right {
+    @include sp {
+      margin: 0 auto 62px;
+    }
+    &_font {
+      padding:9px 41px 8px ;
+      color: #707070;
+      font-size: 1.8rem;
+      line-height: 0.8em;
+      font-family: Roboto Mono for Powerline;
+      letter-spacing: 1.8px;
+      border:1px solid #707070;
+      @include sp {
+        text-align: center;
+      }
+    }
+  }
+}
